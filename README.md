@@ -1,4 +1,4 @@
-# Runtrack - B2 - PHP
+# Runtrack - B2 - JS
 
 <div align="center">
     <img src="square-js-brands-solid.svg" alt="Illustration d'un bol de bonbon" width="200" height="200">
