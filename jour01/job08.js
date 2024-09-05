@@ -11,7 +11,7 @@ function myArraySort(array, sorting) {
   let desc = "DESC";
 
   //*TODO : on fait deux bloc de condition --> un si le tri est ascendant et un si le tri est descendant
-  
+
   // Tri pour ordre croissant
   if (sorting === asc) {
     /**
@@ -27,7 +27,7 @@ function myArraySort(array, sorting) {
      */
     for (let i = 0; i < listnum.length - 1; i++) {
       /**
-       * *Boucle 2 (j) : 
+       * *Boucle 2 (j) :
        * Cette boucle compare les éléments adjacents et
        * échange leurs positions si l'élément précédent est plus grand
        * que l'élément suivant.
