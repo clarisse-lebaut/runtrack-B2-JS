@@ -49,6 +49,5 @@ if (isset($_POST['email-search-student'])) {
     ];
 }
 
-// Assurez-vous que l'entête indique du JSON
 header('Content-Type: application/json');
 echo json_encode($response);

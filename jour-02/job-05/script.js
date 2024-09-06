@@ -1,7 +1,7 @@
 function mySearchButton(form) {
   const studentData = new FormData(form);
 
-  fetch("job05.php", {
+  fetch("request.php", {
     method: "POST",
     body: studentData,
   })
@@ -30,7 +30,6 @@ function mySearchButton(form) {
           </table>
         `;
       } else {
-        // Si une erreur survient, afficher un message d'erreur
         resultContainer.innerHTML = `<p>${data.message}</p>`;
       }
     })
@@ -41,6 +40,6 @@ function mySearchButton(form) {
 }
 
 document.getElementById("form-search-student").addEventListener("submit", function (event) {
-  event.preventDefault(); // Empêche la soumission classique du formulaire
+  event.preventDefault();
   mySearchButton(this);
 });

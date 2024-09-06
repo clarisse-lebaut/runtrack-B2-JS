@@ -1,20 +1,16 @@
 function myRegisterStudent(form) {
-  // Il faut crée un objet qui va réunir toute les données du formulaire
-  //? cela facilite l'envoie des données
   const studentData = new FormData(form);
 
-  //on utilise fetch
-  fetch("job04.php", {
+  fetch("request.php", {
     method: "POST",
     body: studentData,
   })
     .then((response) => response.json())
     .then((data) => {
-      // Affiche le message retourné par PHP dans une alerte
       if (data.status === "success") {
-        alert(data.message); // Affiche le message de succès
+        alert(data.message);
       } else {
-        alert(data.message); // Affiche le message d'erreur
+        alert(data.message);
       }
     })
     .catch((error) => {
@@ -24,7 +20,6 @@ function myRegisterStudent(form) {
 }
 
 document.getElementById("form-add-student").addEventListener("submit", function (event) {
-  // récupére la fonction faite dans le fichier PHP
   event.preventDefault();
   myRegisterStudent(this);
 });
