@@ -36,7 +36,7 @@ PS : et puis... j'adore les Readme, tant de d'informations et de structuration p
   - 📝 Job04 : Additionner les nombres d'un tableau
 
   - 📝 Job05 : Retourner les nombres premiers (limit !)
-  
+
   - 📝 Job06 : Nombre² - num \* num
 
   - 📝 Job07 : Trouver le nombre le plus près de 0
@@ -46,3 +46,13 @@ PS : et puis... j'adore les Readme, tant de d'informations et de structuration p
   <br>
 
 - 📅 Jour-02 :
+
+  - 📝 Job01 : Changer le backgroundColor selon la taille de l'écran
+
+  - 📝 Job02 : un clic, +1 !
+
+  - 📝 Job03 : Entrée input et changement FontStyle
+
+  - 📝 Job04 : Fetch dans MySQL, faire parler JS et PHP 
+
+  - 📝 Job05 : en cour de réalisation
