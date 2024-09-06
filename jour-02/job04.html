@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="job04.js" defer></script>
+  </head>
+  <body>
+    <form id="registrationForm" action="job04.php" method="POST">
+      <label for="student-email">E-mail</label>
+      <input type="email" name="student-email" id="student-email" />
+      <label for="student-fullname">Nom & Prénom</label>
+      <input type="text" name="student-fullname" id="student-fullname" />
+      <label for="student-gender">Genre</label>
+      <select name="select" id="student-gender">
+        <option value="male">Homme</option>
+        <option value="female">Femme</option>
+      </select>
+      <label for="student-grade">Promotion</label>
+      <select name="student-grade" id="student-grade">
+        <option value="promo1">Bachelor Année 1</option>
+        <option value="promo1">Bachelor Année 2</option>
+        <option value="promo1">Bachelor Année 3</option>
+        <option value="promo1">Master Année 1</option>
+        <option value="promo1">Master Année 2</option>
+      </select>
+      <label for="student-birthdate">Date de naissance</label>
+      <input type="date" name="student-birthdate" id="student-birthdate" />
+      <input type="submit" id="submit-btn" />
+    </form>
+  </body>
+</html>
