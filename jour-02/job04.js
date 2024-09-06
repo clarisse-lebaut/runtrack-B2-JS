@@ -8,9 +8,14 @@ function myRegisterStudent(form) {
     method: "POST",
     body: studentData,
   })
-    .then((response) => response.text())
-    .then((result) => {
-      alert(result.message);
+    .then((response) => response.json())
+    .then((data) => {
+      // Affiche le message retourné par PHP dans une alerte
+      if (data.status === "success") {
+        alert(data.message); // Affiche le message de succès
+      } else {
+        alert(data.message); // Affiche le message d'erreur
+      }
     })
     .catch((error) => {
       console.error("Error: ", error);
@@ -18,7 +23,7 @@ function myRegisterStudent(form) {
     });
 }
 
-document.getElementById("registrationForm").addEventListener("submit", function (event) {
+document.getElementById("form-add-student").addEventListener("submit", function (event) {
   // récupére la fonction faite dans le fichier PHP
   event.preventDefault();
   myRegisterStudent(this);
